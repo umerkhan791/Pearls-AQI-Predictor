@@ -17,3 +17,5 @@ seaborn
 
 python-dotenv==1.0.0
 schedule==1.2.1
+
+loguru
