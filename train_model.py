@@ -1,10 +1,12 @@
-"""
+﻿"""
 Pearls AQI Predictor - Next-Hour Model Training
 
 Uses features at time t to predict AQI at time t+1.
 """
 
 import os
+import json
+from pathlib import Path
 import joblib
 import numpy as np
 import pandas as pd
@@ -215,7 +217,7 @@ df["aqi"] = labels_df["aqi"].values
 
 print(
     f"Combined dataset: "
-    f"{len(df)} rows × {len(df.columns)} columns"
+    f"{len(df)} rows Ã— {len(df.columns)} columns"
 )
 
 
@@ -258,7 +260,7 @@ print(
 )
 
 print(
-    "Features at time t → AQI at time t+1"
+    "Features at time t â†’ AQI at time t+1"
 )
 
 
@@ -436,9 +438,29 @@ print(
 )
 
 print(
-    f"R²:   {r2:.4f}"
+    f"RÂ²:   {r2:.4f}"
 )
 
+
+# =====================================================================
+# SAVE METRICS FOR MODEL REGISTRY
+# =====================================================================
+
+metrics_path = Path("reports/training_metrics.json")
+metrics_path.parent.mkdir(parents=True, exist_ok=True)
+
+with open(metrics_path, "w", encoding="utf-8") as f:
+    json.dump(
+        {
+            "mae": float(mae),
+            "rmse": float(rmse),
+            "r2": float(r2),
+        },
+        f,
+        indent=2,
+    )
+
+print(f"Metrics saved: {metrics_path}")
 
 # =====================================================================
 # SAMPLE PREDICTIONS
@@ -523,3 +545,6 @@ print(
 print("\n" + "=" * 70)
 print("NEXT-HOUR MODEL TRAINING COMPLETE")
 print("=" * 70)
+
+
+
