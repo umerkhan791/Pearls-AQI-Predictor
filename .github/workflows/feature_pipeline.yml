@@ -26,6 +26,7 @@ jobs:
       - name: Run feature pipeline
         env:
           HOPSWORKS_API_KEY: ${{ secrets.HOPSWORKS_API_KEY }}
+          AQICN_TOKEN: ${{ secrets.AQICN_TOKEN }}
         run: |
           python backfill.py
           python hopsworks_feature_store.py
