@@ -1,0 +1,23 @@
+﻿.env
+.venv/
+__pycache__/
+*.pyc
+
+# Local databases and generated data
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+
+# Generated model/output files
+aqi_model.pkl
+next_hour_predictions.csv
+data/forecast_72h.csv
+
+# Generated plots/reports
+*.png
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

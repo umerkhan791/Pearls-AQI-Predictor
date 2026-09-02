@@ -1,0 +1,65 @@
+{
+    "city": "karachi",
+    "best_model": "ridge_regression",
+    "horizon_hours": 24,
+    "feature_names": [
+        "hour",
+        "day",
+        "month",
+        "day_of_week",
+        "is_weekend",
+        "aqi_lag_1h",
+        "aqi_lag_3h",
+        "aqi_lag_6h",
+        "aqi_lag_12h",
+        "aqi_lag_24h",
+        "aqi_roll_mean_3h",
+        "aqi_roll_mean_6h",
+        "aqi_roll_mean_12h",
+        "aqi_roll_mean_24h",
+        "aqi_roll_std_6h",
+        "aqi_roll_std_24h",
+        "aqi_change_1h",
+        "aqi_change_6h",
+        "aqi_change_24h",
+        "pm25",
+        "pm10",
+        "o3",
+        "no2",
+        "so2",
+        "co",
+        "temperature",
+        "humidity",
+        "pressure",
+        "wind"
+    ],
+    "n_features": 29,
+    "train_samples": 1728,
+    "test_samples": 432,
+    "trained_at": "2026-08-31T05:44:59.675247",
+    "models": {
+        "ridge_regression": {
+            "rmse": 5.693774928326515,
+            "mae": 4.13813720669333,
+            "r2": 0.5544452311520672,
+            "cv_rmse": 8.273269552990037
+        },
+        "random_forest": {
+            "rmse": 7.63300721915485,
+            "mae": 5.983679789992899,
+            "r2": 0.19925939628490263,
+            "cv_rmse": 9.35579269526438
+        },
+        "xgboost": {
+            "rmse": 6.307131303862494,
+            "mae": 5.006172621691668,
+            "r2": 0.45328089610950106,
+            "cv_rmse": 9.01735809611924
+        },
+        "tensorflow_lstm": {
+            "rmse": 6.180103541508038,
+            "mae": 5.013214694129096,
+            "r2": 0.4750813448022061
+        }
+    }
+}
