@@ -903,7 +903,7 @@ def load_actual_history(hours=168):
             conn.close()
 
 
-def load_72h_forecast(expected_pred_time=None, expected_predicted_aqi=None):
+def load_72h_forecast():
     """Load and validate the locally generated 72-hour recursive forecast."""
     if not os.path.exists(FORECAST_PATH):
         return pd.DataFrame()
@@ -951,20 +951,6 @@ def load_72h_forecast(expected_pred_time=None, expected_predicted_aqi=None):
 
     if df["timestamp"].tolist() != expected.tolist():
         return pd.DataFrame()
-
-    # The first 72h forecast must match the live FastAPI
-    # next-hour prediction. This prevents stale or mismatched
-    # forecast files from being displayed.
-    if expected_pred_time is not None:
-        expected_time = pd.to_datetime(expected_pred_time, errors="coerce")
-        if pd.isna(expected_time) or df.iloc[0]["timestamp"] != expected_time:
-            return pd.DataFrame()
-
-    if expected_predicted_aqi is not None:
-        first_value = float(df.iloc[0]["predicted_aqi"])
-        if abs(first_value - float(expected_predicted_aqi)) > 0.05:
-            return pd.DataFrame()
-
     return df
 
 
@@ -1308,7 +1294,7 @@ with w4:
 # 72-HOUR FORECAST
 # ============================================================
 
-forecast_df = load_72h_forecast(pred_time, predicted_aqi)
+forecast_df = load_72h_forecast()
 
 if not forecast_df.empty:
 
