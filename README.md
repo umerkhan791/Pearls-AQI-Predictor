@@ -31,7 +31,7 @@ The system brings together real-time and historical air quality data, automated 
                     │  AQI + Weather Data  │
                     │                      │
                     │  AQICN               │
-                    │  Live Data Source    │
+                    │  AQI / Station Data  │
                     └──────────┬───────────┘
                                │
                                ▼
