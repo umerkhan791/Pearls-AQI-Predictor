@@ -16,7 +16,7 @@ The goal was to build an end-to-end machine learning system capable of forecasti
 
 The internship requirements covered external environmental data, historical data processing, feature engineering, Feature Store integration, model training and evaluation, Model Registry, automated pipelines, an interactive dashboard, explainability, AQI health alerts, and multi-day forecasting.
 
-Rather than treating this as a standalone notebook exercise, I designed it as a complete production-oriented pipeline:
+Rather than treating this as a standalone notebook exercise, I designed it as a complete end-to-end machine learning pipeline:
 
 ```
 Data Collection → Cleaning → Feature Engineering → Feature Store
@@ -30,7 +30,7 @@ The architecture is serverless-oriented, using GitHub Actions, Hopsworks, and St
 
 ## 2. Understanding the AQI Problem
 
-Air quality is not determined by a single pollutant. AQI is a composite measure influenced by concentrations of PM2.5, PM10, ozone, nitrogen dioxide, sulfur dioxide, and carbon monoxide. Weather conditions — temperature, humidity, atmospheric pressure, and wind speed — can also affect pollution levels significantly.
+Air quality is not determined by a single pollutant. The system uses AQI together with pollutant concentrations such as PM2.5, PM10, ozone, nitrogen dioxide, sulfur dioxide, and carbon monoxide. Weather conditions — temperature, humidity, atmospheric pressure, and wind speed — can also affect pollution levels significantly.
 
 AQI also has strong temporal behavior. The air quality at a given hour is closely related to the air quality in the hours immediately before it. This persistence is one of the most important properties the model needs to capture.
 
