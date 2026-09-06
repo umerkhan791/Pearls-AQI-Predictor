@@ -24,7 +24,7 @@ Data Collection → Cleaning → Feature Engineering → Feature Store
 → 72-Hour Forecast → Streamlit Dashboard
 ```
 
-The architecture is serverless-oriented, using GitHub Actions, Hopsworks, and Streamlit Community Cloud so that the system can operate without a dedicated application server.
+The architecture uses managed cloud services and serverless-style automation, with GitHub Actions for scheduled workflows, Hopsworks for feature and model management, Render for the FastAPI prediction service, and Streamlit Community Cloud for the dashboard.
 
 ---
 
@@ -42,7 +42,7 @@ Because of this, I chose not to train the model only on current pollutant values
 
 The first decision was selecting suitable environmental APIs. The project explored AQICN and Open-Meteo as the primary sources.
 
-AQICN provides AQI and station-based air quality information. Open-Meteo was particularly valuable for historical data, offering accessible hourly air quality and weather datasets for any geographic location.
+AQICN provides AQI and station-based air quality information. Open-Meteo was particularly valuable for historical data, offering accessible hourly air quality and weather datasets for the Karachi geographic coordinate used by the project.
 
 For the historical backfill, Open-Meteo was used to collect hourly environmental data for Karachi using the following coordinates:
 
@@ -51,7 +51,7 @@ Latitude:  24.8607
 Longitude: 67.0011
 ```
 
-An important design decision here was to convert all incoming data into a consistent internal feature format before feeding it into the pipeline. This means downstream components — training, prediction, the dashboard — do not need to care which external source originally provided a particular record.
+An important design decision here was to convert incoming data into a consistent internal feature format before feeding it into the pipeline. For the final live prediction path, Open-Meteo is used because the AQICN feed available during development did not provide a sufficiently reliable current Karachi value for this application. Downstream components therefore work with a consistent internal representation rather than depending on the original source format.
 
 ---
 
@@ -106,7 +106,7 @@ Several machine learning approaches were considered during development, includin
 
 The evaluation criteria were not purely metric-based. The final model also needed to be reliable, fast enough for daily automated retraining, easy to deploy, explainable, and suitable for unattended execution in a scheduled pipeline.
 
-The final production model is a **Random Forest Regressor** with 300 trees. It was selected because it produced the strongest next-hour predictive performance while remaining practical for automated retraining and deployment, and because its feature importances integrate naturally with SHAP for explainability.
+The final production model is a **Random Forest Regressor** with 300 trees. It was selected as the production model based on its strong next-hour predictive performance, practical training and deployment requirements, and compatibility with the project's explainability workflow.
 
 The trained model is registered in Hopsworks Model Registry as `karachi_aqi_next_hour_rf`, Version 2.
 
@@ -168,13 +168,15 @@ The trained production model is registered in the **Hopsworks Model Registry** u
 
 ## 13. GitHub Actions Automation
 
-Two GitHub Actions workflows automate the data and model lifecycle.
+Three GitHub Actions workflows automate the data, model, and forecast lifecycle.
 
 **Hourly Feature Pipeline** — runs every hour, fetches new AQI and weather data, processes it, generates features, and updates the Feature Store.
 
 **Daily Training Pipeline** — runs once per day, retrieves the historical training dataset, trains and evaluates the model, and registers the updated version in Hopsworks.
 
-This removes the need for manual retraining and keeps the Feature Store current without intervention.
+**Hourly 72-Hour Forecast Pipeline** — runs every hour, regenerates the recursive 72-hour AQI forecast, and commits the updated forecast data for the public dashboard.
+
+Together, these workflows remove the need for manual feature updates, retraining, and forecast regeneration.
 
 ---
 
@@ -192,7 +194,7 @@ The solution was to separate training and live serving responsibilities. Hopswor
 
 ### Deployment Dependency Conflicts
 
-During Streamlit Cloud deployment, dependency conflicts appeared because some Hopsworks packages were incompatible with the Python environment used by the dashboard. The solution was to separate application dependencies from the Hopsworks workflow dependencies, resulting in a lighter and cleaner deployment environment.
+During Streamlit Cloud deployment, the initial dashboard dependency stack was too heavy and caused installation and resource problems. The solution was to separate application dependencies from the Hopsworks and CI workflow dependencies, resulting in a lighter and cleaner deployment environment.
 
 ---
 
@@ -206,7 +208,7 @@ A **FastAPI** backend handles live prediction. The API fetches current environme
 
 The **Streamlit dashboard** provides a publicly accessible interface to the full system without requiring any direct Python interaction.
 
-It covers current AQI and health category, next-hour forecast, 72-hour forecast with chart and hourly table, pollutant and weather readings, model evaluation metrics (including longer-horizon validation), SHAP explainability, AQI health reference, methodology documentation, and hazardous AQI alerting.
+It covers current AQI and health category, next-hour forecast, 72-hour forecast with chart and hourly table, pollutant and weather readings, model evaluation metrics (including longer-horizon validation), SHAP explainability, AQI health reference, methodology documentation, and hazardous AQI highlighting.
 
 The dashboard converts raw AQI values into standard health categories:
 
@@ -233,7 +235,9 @@ SHAP was incorporated to provide feature-level explanations of individual predic
 
 **Forecast stability** — Because the model relies heavily on the previous AQI value, recursive forecasts can converge toward a relatively stable range rather than capturing real atmospheric variability. A future version should investigate dedicated multi-horizon models.
 
-**Geographic coverage** — The current system represents Karachi using a single geographic point. Air quality varies across a large city; additional monitoring stations would improve accuracy.
+**Geographic coverage** — The current system represents Karachi using a single geographic coordinate rather than a network of physical monitoring stations. Air quality can vary substantially across the city, so additional monitoring locations would improve geographic accuracy.
+
+**AQI data representation** — The live AQI displayed by the prediction API is an Open-Meteo AQI estimate rather than a direct measurement from a physical Karachi monitoring station.
 
 **External API dependency** — The system depends on third-party environmental data services. API downtime, stale station data, or changes in API coverage can affect live predictions.
 
