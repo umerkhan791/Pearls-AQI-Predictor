@@ -19,7 +19,7 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 
-API_URL = "http://127.0.0.1:8000/predict"
+API_URL = "https://pearls-aqi-api-xc81.onrender.com/predict"
 FORECAST_PATH = os.path.join("data", "forecast_72h.csv")
 
 # ============================================================
