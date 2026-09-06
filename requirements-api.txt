@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+requests
+pandas==2.1.4
+numpy==1.26.3
+scikit-learn==1.3.2
+joblib==1.3.2
+python-dotenv==1.0.0
