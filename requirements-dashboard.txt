@@ -1,0 +1,10 @@
+streamlit
+pandas==2.1.4
+numpy==1.26.2
+requests
+joblib==1.3.2
+scikit-learn==1.3.2
+python-dotenv==1.0.0
+altair
+plotly
+shap==0.45.1
