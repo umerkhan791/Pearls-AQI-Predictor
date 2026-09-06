@@ -1,0 +1,34 @@
+{
+  "city": "karachi",
+  "evaluation_type": "Horizon-specific supervised Random Forest evaluation",
+  "methodology": "Separate AQI target shifted by 24, 48 and 72 hours with chronological 80/20 train-test split.",
+  "horizons": {
+    "24h": {
+      "horizon_hours": 24,
+      "model": "RandomForestRegressor",
+      "train_samples": 1728,
+      "test_samples": 408,
+      "mae": 6.0993,
+      "rmse": 7.1992,
+      "r2": 0.5487
+    },
+    "48h": {
+      "horizon_hours": 48,
+      "model": "RandomForestRegressor",
+      "train_samples": 1728,
+      "test_samples": 384,
+      "mae": 10.004,
+      "rmse": 11.972,
+      "r2": -0.1747
+    },
+    "72h": {
+      "horizon_hours": 72,
+      "model": "RandomForestRegressor",
+      "train_samples": 1728,
+      "test_samples": 360,
+      "mae": 11.2936,
+      "rmse": 12.9309,
+      "r2": -0.2855
+    }
+  }
+}
