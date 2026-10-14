@@ -1,73 +1,73 @@
 predicted_for,predicted_aqi,category
-2026-10-14 19:00:00,71.56,Moderate
-2026-10-14 20:00:00,102.63,Unhealthy for Sensitive Groups
-2026-10-14 21:00:00,73.29,Moderate
-2026-10-14 22:00:00,103.37,Unhealthy for Sensitive Groups
-2026-10-14 23:00:00,73.99,Moderate
-2026-10-15 00:00:00,103.49,Unhealthy for Sensitive Groups
+2026-10-14 19:00:00,71.55,Moderate
+2026-10-14 20:00:00,102.52,Unhealthy for Sensitive Groups
+2026-10-14 21:00:00,73.28,Moderate
+2026-10-14 22:00:00,103.16,Unhealthy for Sensitive Groups
+2026-10-14 23:00:00,73.95,Moderate
+2026-10-15 00:00:00,103.26,Unhealthy for Sensitive Groups
 2026-10-15 01:00:00,75.25,Moderate
-2026-10-15 02:00:00,103.45,Unhealthy for Sensitive Groups
+2026-10-15 02:00:00,103.21,Unhealthy for Sensitive Groups
 2026-10-15 03:00:00,75.78,Moderate
-2026-10-15 04:00:00,103.39,Unhealthy for Sensitive Groups
-2026-10-15 05:00:00,76.53,Moderate
-2026-10-15 06:00:00,103.41,Unhealthy for Sensitive Groups
+2026-10-15 04:00:00,103.15,Unhealthy for Sensitive Groups
+2026-10-15 05:00:00,76.54,Moderate
+2026-10-15 06:00:00,103.17,Unhealthy for Sensitive Groups
 2026-10-15 07:00:00,78.59,Moderate
-2026-10-15 08:00:00,103.42,Unhealthy for Sensitive Groups
-2026-10-15 09:00:00,80.21,Moderate
-2026-10-15 10:00:00,103.48,Unhealthy for Sensitive Groups
-2026-10-15 11:00:00,81.5,Moderate
-2026-10-15 12:00:00,103.47,Unhealthy for Sensitive Groups
-2026-10-15 13:00:00,82.44,Moderate
-2026-10-15 14:00:00,103.49,Unhealthy for Sensitive Groups
-2026-10-15 15:00:00,82.45,Moderate
-2026-10-15 16:00:00,103.44,Unhealthy for Sensitive Groups
-2026-10-15 17:00:00,82.45,Moderate
-2026-10-15 18:00:00,103.44,Unhealthy for Sensitive Groups
-2026-10-15 19:00:00,82.18,Moderate
-2026-10-15 20:00:00,103.42,Unhealthy for Sensitive Groups
-2026-10-15 21:00:00,82.18,Moderate
-2026-10-15 22:00:00,103.43,Unhealthy for Sensitive Groups
-2026-10-15 23:00:00,82.18,Moderate
-2026-10-16 00:00:00,103.41,Unhealthy for Sensitive Groups
-2026-10-16 01:00:00,82.03,Moderate
-2026-10-16 02:00:00,103.28,Unhealthy for Sensitive Groups
-2026-10-16 03:00:00,82.02,Moderate
-2026-10-16 04:00:00,103.27,Unhealthy for Sensitive Groups
-2026-10-16 05:00:00,82.05,Moderate
-2026-10-16 06:00:00,103.28,Unhealthy for Sensitive Groups
-2026-10-16 07:00:00,82.04,Moderate
-2026-10-16 08:00:00,103.27,Unhealthy for Sensitive Groups
-2026-10-16 09:00:00,82.06,Moderate
-2026-10-16 10:00:00,103.25,Unhealthy for Sensitive Groups
-2026-10-16 11:00:00,82.15,Moderate
-2026-10-16 12:00:00,103.24,Unhealthy for Sensitive Groups
-2026-10-16 13:00:00,82.17,Moderate
-2026-10-16 14:00:00,103.24,Unhealthy for Sensitive Groups
-2026-10-16 15:00:00,82.17,Moderate
-2026-10-16 16:00:00,103.26,Unhealthy for Sensitive Groups
-2026-10-16 17:00:00,82.17,Moderate
-2026-10-16 18:00:00,103.29,Unhealthy for Sensitive Groups
-2026-10-16 19:00:00,82.17,Moderate
-2026-10-16 20:00:00,103.29,Unhealthy for Sensitive Groups
-2026-10-16 21:00:00,82.17,Moderate
-2026-10-16 22:00:00,103.3,Unhealthy for Sensitive Groups
-2026-10-16 23:00:00,82.17,Moderate
-2026-10-17 00:00:00,103.31,Unhealthy for Sensitive Groups
-2026-10-17 01:00:00,82.02,Moderate
-2026-10-17 02:00:00,103.23,Unhealthy for Sensitive Groups
-2026-10-17 03:00:00,82.01,Moderate
-2026-10-17 04:00:00,103.23,Unhealthy for Sensitive Groups
-2026-10-17 05:00:00,82.02,Moderate
-2026-10-17 06:00:00,103.23,Unhealthy for Sensitive Groups
-2026-10-17 07:00:00,82.01,Moderate
-2026-10-17 08:00:00,103.23,Unhealthy for Sensitive Groups
-2026-10-17 09:00:00,82.03,Moderate
-2026-10-17 10:00:00,103.22,Unhealthy for Sensitive Groups
-2026-10-17 11:00:00,82.15,Moderate
-2026-10-17 12:00:00,103.23,Unhealthy for Sensitive Groups
-2026-10-17 13:00:00,82.18,Moderate
-2026-10-17 14:00:00,103.25,Unhealthy for Sensitive Groups
-2026-10-17 15:00:00,82.18,Moderate
-2026-10-17 16:00:00,103.27,Unhealthy for Sensitive Groups
-2026-10-17 17:00:00,82.18,Moderate
-2026-10-17 18:00:00,103.29,Unhealthy for Sensitive Groups
+2026-10-15 08:00:00,103.18,Unhealthy for Sensitive Groups
+2026-10-15 09:00:00,80.2,Moderate
+2026-10-15 10:00:00,103.24,Unhealthy for Sensitive Groups
+2026-10-15 11:00:00,81.52,Moderate
+2026-10-15 12:00:00,103.21,Unhealthy for Sensitive Groups
+2026-10-15 13:00:00,82.46,Moderate
+2026-10-15 14:00:00,103.25,Unhealthy for Sensitive Groups
+2026-10-15 15:00:00,82.46,Moderate
+2026-10-15 16:00:00,103.2,Unhealthy for Sensitive Groups
+2026-10-15 17:00:00,82.46,Moderate
+2026-10-15 18:00:00,103.2,Unhealthy for Sensitive Groups
+2026-10-15 19:00:00,82.19,Moderate
+2026-10-15 20:00:00,103.18,Unhealthy for Sensitive Groups
+2026-10-15 21:00:00,82.19,Moderate
+2026-10-15 22:00:00,103.2,Unhealthy for Sensitive Groups
+2026-10-15 23:00:00,82.19,Moderate
+2026-10-16 00:00:00,103.19,Unhealthy for Sensitive Groups
+2026-10-16 01:00:00,82.05,Moderate
+2026-10-16 02:00:00,103.08,Unhealthy for Sensitive Groups
+2026-10-16 03:00:00,82.04,Moderate
+2026-10-16 04:00:00,103.07,Unhealthy for Sensitive Groups
+2026-10-16 05:00:00,82.08,Moderate
+2026-10-16 06:00:00,103.07,Unhealthy for Sensitive Groups
+2026-10-16 07:00:00,82.06,Moderate
+2026-10-16 08:00:00,103.07,Unhealthy for Sensitive Groups
+2026-10-16 09:00:00,82.08,Moderate
+2026-10-16 10:00:00,103.04,Unhealthy for Sensitive Groups
+2026-10-16 11:00:00,82.16,Moderate
+2026-10-16 12:00:00,103.03,Unhealthy for Sensitive Groups
+2026-10-16 13:00:00,82.18,Moderate
+2026-10-16 14:00:00,103.03,Unhealthy for Sensitive Groups
+2026-10-16 15:00:00,82.18,Moderate
+2026-10-16 16:00:00,103.05,Unhealthy for Sensitive Groups
+2026-10-16 17:00:00,82.18,Moderate
+2026-10-16 18:00:00,103.07,Unhealthy for Sensitive Groups
+2026-10-16 19:00:00,82.18,Moderate
+2026-10-16 20:00:00,103.07,Unhealthy for Sensitive Groups
+2026-10-16 21:00:00,82.18,Moderate
+2026-10-16 22:00:00,103.09,Unhealthy for Sensitive Groups
+2026-10-16 23:00:00,82.18,Moderate
+2026-10-17 00:00:00,103.1,Unhealthy for Sensitive Groups
+2026-10-17 01:00:00,82.04,Moderate
+2026-10-17 02:00:00,103.02,Unhealthy for Sensitive Groups
+2026-10-17 03:00:00,82.03,Moderate
+2026-10-17 04:00:00,103.02,Unhealthy for Sensitive Groups
+2026-10-17 05:00:00,82.05,Moderate
+2026-10-17 06:00:00,103.02,Unhealthy for Sensitive Groups
+2026-10-17 07:00:00,82.04,Moderate
+2026-10-17 08:00:00,103.02,Unhealthy for Sensitive Groups
+2026-10-17 09:00:00,82.06,Moderate
+2026-10-17 10:00:00,103.02,Unhealthy for Sensitive Groups
+2026-10-17 11:00:00,82.16,Moderate
+2026-10-17 12:00:00,103.02,Unhealthy for Sensitive Groups
+2026-10-17 13:00:00,82.19,Moderate
+2026-10-17 14:00:00,103.03,Unhealthy for Sensitive Groups
+2026-10-17 15:00:00,82.19,Moderate
+2026-10-17 16:00:00,103.05,Unhealthy for Sensitive Groups
+2026-10-17 17:00:00,82.19,Moderate
+2026-10-17 18:00:00,103.07,Unhealthy for Sensitive Groups
