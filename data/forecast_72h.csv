@@ -2,10 +2,10 @@ predicted_for,predicted_aqi,category
 2026-10-30 03:00:00,71.53,Moderate
 2026-10-30 04:00:00,102.47,Unhealthy for Sensitive Groups
 2026-10-30 05:00:00,73.35,Moderate
-2026-10-30 06:00:00,101.69,Unhealthy for Sensitive Groups
+2026-10-30 06:00:00,101.7,Unhealthy for Sensitive Groups
 2026-10-30 07:00:00,73.97,Moderate
 2026-10-30 08:00:00,101.63,Unhealthy for Sensitive Groups
-2026-10-30 09:00:00,74.63,Moderate
+2026-10-30 09:00:00,74.62,Moderate
 2026-10-30 10:00:00,101.64,Unhealthy for Sensitive Groups
 2026-10-30 11:00:00,75.56,Moderate
 2026-10-30 12:00:00,101.6,Unhealthy for Sensitive Groups
@@ -70,4 +70,4 @@ predicted_for,predicted_aqi,category
 2026-11-01 23:00:00,82.27,Moderate
 2026-11-02 00:00:00,101.71,Unhealthy for Sensitive Groups
 2026-11-02 01:00:00,82.14,Moderate
-2026-11-02 02:00:00,102.18,Unhealthy for Sensitive Groups
+2026-11-02 02:00:00,102.19,Unhealthy for Sensitive Groups
