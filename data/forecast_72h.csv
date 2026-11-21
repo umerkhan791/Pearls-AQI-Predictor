@@ -1,73 +1,73 @@
 predicted_for,predicted_aqi,category
-2026-11-21 10:00:00,71.54,Moderate
-2026-11-21 11:00:00,102.17,Unhealthy for Sensitive Groups
-2026-11-21 12:00:00,73.4,Moderate
-2026-11-21 13:00:00,101.37,Unhealthy for Sensitive Groups
-2026-11-21 14:00:00,73.94,Moderate
-2026-11-21 15:00:00,100.98,Unhealthy for Sensitive Groups
-2026-11-21 16:00:00,74.51,Moderate
-2026-11-21 17:00:00,100.99,Unhealthy for Sensitive Groups
-2026-11-21 18:00:00,75.53,Moderate
-2026-11-21 19:00:00,100.97,Unhealthy for Sensitive Groups
-2026-11-21 20:00:00,76.5,Moderate
-2026-11-21 21:00:00,101.04,Unhealthy for Sensitive Groups
-2026-11-21 22:00:00,76.5,Moderate
-2026-11-21 23:00:00,101.05,Unhealthy for Sensitive Groups
-2026-11-22 00:00:00,76.5,Moderate
-2026-11-22 01:00:00,100.87,Unhealthy for Sensitive Groups
-2026-11-22 02:00:00,76.5,Moderate
-2026-11-22 03:00:00,100.86,Unhealthy for Sensitive Groups
-2026-11-22 04:00:00,76.5,Moderate
-2026-11-22 05:00:00,100.85,Unhealthy for Sensitive Groups
-2026-11-22 06:00:00,76.5,Moderate
-2026-11-22 07:00:00,100.85,Unhealthy for Sensitive Groups
-2026-11-22 08:00:00,76.5,Moderate
-2026-11-22 09:00:00,100.84,Unhealthy for Sensitive Groups
-2026-11-22 10:00:00,76.45,Moderate
-2026-11-22 11:00:00,100.87,Unhealthy for Sensitive Groups
-2026-11-22 12:00:00,76.45,Moderate
-2026-11-22 13:00:00,100.87,Unhealthy for Sensitive Groups
-2026-11-22 14:00:00,76.46,Moderate
-2026-11-22 15:00:00,100.87,Unhealthy for Sensitive Groups
-2026-11-22 16:00:00,76.46,Moderate
-2026-11-22 17:00:00,100.92,Unhealthy for Sensitive Groups
-2026-11-22 18:00:00,76.45,Moderate
-2026-11-22 19:00:00,100.92,Unhealthy for Sensitive Groups
-2026-11-22 20:00:00,76.46,Moderate
-2026-11-22 21:00:00,100.96,Unhealthy for Sensitive Groups
-2026-11-22 22:00:00,76.46,Moderate
-2026-11-22 23:00:00,100.98,Unhealthy for Sensitive Groups
-2026-11-23 00:00:00,76.47,Moderate
-2026-11-23 01:00:00,101.51,Unhealthy for Sensitive Groups
-2026-11-23 02:00:00,76.56,Moderate
-2026-11-23 03:00:00,101.83,Unhealthy for Sensitive Groups
-2026-11-23 04:00:00,78.76,Moderate
-2026-11-23 05:00:00,101.88,Unhealthy for Sensitive Groups
-2026-11-23 06:00:00,80.28,Moderate
-2026-11-23 07:00:00,101.89,Unhealthy for Sensitive Groups
-2026-11-23 08:00:00,81.2,Moderate
-2026-11-23 09:00:00,101.89,Unhealthy for Sensitive Groups
-2026-11-23 10:00:00,81.59,Moderate
-2026-11-23 11:00:00,101.88,Unhealthy for Sensitive Groups
-2026-11-23 12:00:00,82.37,Moderate
-2026-11-23 13:00:00,101.88,Unhealthy for Sensitive Groups
-2026-11-23 14:00:00,82.37,Moderate
-2026-11-23 15:00:00,101.86,Unhealthy for Sensitive Groups
-2026-11-23 16:00:00,82.37,Moderate
-2026-11-23 17:00:00,101.87,Unhealthy for Sensitive Groups
-2026-11-23 18:00:00,82.36,Moderate
-2026-11-23 19:00:00,101.88,Unhealthy for Sensitive Groups
-2026-11-23 20:00:00,82.36,Moderate
-2026-11-23 21:00:00,101.9,Unhealthy for Sensitive Groups
-2026-11-23 22:00:00,82.36,Moderate
-2026-11-23 23:00:00,101.9,Unhealthy for Sensitive Groups
-2026-11-24 00:00:00,82.35,Moderate
-2026-11-24 01:00:00,101.21,Unhealthy for Sensitive Groups
-2026-11-24 02:00:00,81.81,Moderate
-2026-11-24 03:00:00,100.78,Unhealthy for Sensitive Groups
-2026-11-24 04:00:00,81.81,Moderate
-2026-11-24 05:00:00,100.73,Unhealthy for Sensitive Groups
-2026-11-24 06:00:00,81.78,Moderate
-2026-11-24 07:00:00,100.71,Unhealthy for Sensitive Groups
-2026-11-24 08:00:00,82.24,Moderate
-2026-11-24 09:00:00,100.81,Unhealthy for Sensitive Groups
+2026-11-21 11:00:00,71.54,Moderate
+2026-11-21 12:00:00,103.5,Unhealthy for Sensitive Groups
+2026-11-21 13:00:00,73.34,Moderate
+2026-11-21 14:00:00,103.23,Unhealthy for Sensitive Groups
+2026-11-21 15:00:00,73.8,Moderate
+2026-11-21 16:00:00,103.15,Unhealthy for Sensitive Groups
+2026-11-21 17:00:00,74.36,Moderate
+2026-11-21 18:00:00,103.15,Unhealthy for Sensitive Groups
+2026-11-21 19:00:00,74.59,Moderate
+2026-11-21 20:00:00,103.12,Unhealthy for Sensitive Groups
+2026-11-21 21:00:00,75.68,Moderate
+2026-11-21 22:00:00,103.17,Unhealthy for Sensitive Groups
+2026-11-21 23:00:00,76.51,Moderate
+2026-11-22 00:00:00,103.18,Unhealthy for Sensitive Groups
+2026-11-22 01:00:00,78.77,Moderate
+2026-11-22 02:00:00,103.16,Unhealthy for Sensitive Groups
+2026-11-22 03:00:00,80.29,Moderate
+2026-11-22 04:00:00,103.18,Unhealthy for Sensitive Groups
+2026-11-22 05:00:00,81.55,Moderate
+2026-11-22 06:00:00,103.18,Unhealthy for Sensitive Groups
+2026-11-22 07:00:00,82.44,Moderate
+2026-11-22 08:00:00,103.17,Unhealthy for Sensitive Groups
+2026-11-22 09:00:00,82.45,Moderate
+2026-11-22 10:00:00,103.11,Unhealthy for Sensitive Groups
+2026-11-22 11:00:00,82.23,Moderate
+2026-11-22 12:00:00,103.07,Unhealthy for Sensitive Groups
+2026-11-22 13:00:00,82.29,Moderate
+2026-11-22 14:00:00,103.08,Unhealthy for Sensitive Groups
+2026-11-22 15:00:00,82.29,Moderate
+2026-11-22 16:00:00,103.08,Unhealthy for Sensitive Groups
+2026-11-22 17:00:00,82.29,Moderate
+2026-11-22 18:00:00,103.09,Unhealthy for Sensitive Groups
+2026-11-22 19:00:00,82.28,Moderate
+2026-11-22 20:00:00,103.1,Unhealthy for Sensitive Groups
+2026-11-22 21:00:00,82.28,Moderate
+2026-11-22 22:00:00,103.08,Unhealthy for Sensitive Groups
+2026-11-22 23:00:00,82.28,Moderate
+2026-11-23 00:00:00,103.08,Unhealthy for Sensitive Groups
+2026-11-23 01:00:00,82.15,Moderate
+2026-11-23 02:00:00,104.32,Unhealthy for Sensitive Groups
+2026-11-23 03:00:00,82.19,Moderate
+2026-11-23 04:00:00,104.43,Unhealthy for Sensitive Groups
+2026-11-23 05:00:00,82.23,Moderate
+2026-11-23 06:00:00,104.42,Unhealthy for Sensitive Groups
+2026-11-23 07:00:00,82.21,Moderate
+2026-11-23 08:00:00,104.4,Unhealthy for Sensitive Groups
+2026-11-23 09:00:00,82.16,Moderate
+2026-11-23 10:00:00,104.4,Unhealthy for Sensitive Groups
+2026-11-23 11:00:00,82.26,Moderate
+2026-11-23 12:00:00,104.41,Unhealthy for Sensitive Groups
+2026-11-23 13:00:00,82.28,Moderate
+2026-11-23 14:00:00,104.42,Unhealthy for Sensitive Groups
+2026-11-23 15:00:00,82.29,Moderate
+2026-11-23 16:00:00,104.42,Unhealthy for Sensitive Groups
+2026-11-23 17:00:00,82.29,Moderate
+2026-11-23 18:00:00,104.44,Unhealthy for Sensitive Groups
+2026-11-23 19:00:00,82.28,Moderate
+2026-11-23 20:00:00,104.44,Unhealthy for Sensitive Groups
+2026-11-23 21:00:00,82.28,Moderate
+2026-11-23 22:00:00,104.43,Unhealthy for Sensitive Groups
+2026-11-23 23:00:00,82.28,Moderate
+2026-11-24 00:00:00,104.43,Unhealthy for Sensitive Groups
+2026-11-24 01:00:00,82.15,Moderate
+2026-11-24 02:00:00,103.09,Unhealthy for Sensitive Groups
+2026-11-24 03:00:00,81.71,Moderate
+2026-11-24 04:00:00,102.92,Unhealthy for Sensitive Groups
+2026-11-24 05:00:00,81.47,Moderate
+2026-11-24 06:00:00,102.92,Unhealthy for Sensitive Groups
+2026-11-24 07:00:00,81.28,Moderate
+2026-11-24 08:00:00,102.92,Unhealthy for Sensitive Groups
+2026-11-24 09:00:00,81.56,Moderate
+2026-11-24 10:00:00,102.95,Unhealthy for Sensitive Groups
