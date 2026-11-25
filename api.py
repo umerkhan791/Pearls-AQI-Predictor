@@ -250,13 +250,20 @@ def get_live_aqi():
         # AQI
         # ----------------------------------------------------
 
-        aq_response = requests.get(
-            aq_url,
-            params=aq_params,
-            timeout=15,
-        )
-
-        aq_response.raise_for_status()
+        for attempt in range(3):
+            try:
+                aq_response = requests.get(
+                    aq_url,
+                    params=aq_params,
+                    timeout=45,
+                )
+                aq_response.raise_for_status()
+                break
+            except requests.RequestException:
+                if attempt == 2:
+                    raise
+                import time
+                time.sleep(3 * (attempt + 1))
 
         aq_payload = aq_response.json()
         aq_data = aq_payload.get("current", {})
@@ -280,13 +287,20 @@ def get_live_aqi():
         # WEATHER
         # ----------------------------------------------------
 
-        weather_response = requests.get(
-            weather_url,
-            params=weather_params,
-            timeout=15,
-        )
-
-        weather_response.raise_for_status()
+        for attempt in range(3):
+            try:
+                weather_response = requests.get(
+                    weather_url,
+                    params=weather_params,
+                    timeout=45,
+                )
+                weather_response.raise_for_status()
+                break
+            except requests.RequestException:
+                if attempt == 2:
+                    raise
+                import time
+                time.sleep(3 * (attempt + 1))
 
         weather_payload = weather_response.json()
         weather_data = weather_payload.get("current", {})
